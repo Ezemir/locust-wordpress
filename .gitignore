@@ -1,0 +1,38 @@
+# Ignore arquivos e diretórios do MySQL
+/mysql
+/mysql/*
+
+# Ignore arquivos e diretórios do WordPress
+/wordpress
+/wordpress/*
+
+# Ignore logs do Nginx
+/nginx/logs
+/nginx/logs/*
+
+# Não ignore arquivos essenciais do Nginx
+!/nginx/nginx.conf
+!/nginx/Dockerfile
+
+# Ignore arquivos do Locust, mas mantenha locustfile.py, 1.jpg e 2.jpg
+/locust/__pycache__*
+!/locust/locustfile.py
+!/locust/1.jpg
+!/locust/2.jpg
+
+# Ignore arquivos de configuração do Docker
+.dockerignore
+docker-compose.override.yml
+
+# Ignore outros arquivos desnecessários ou temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Ignore arquivos de sistema
+.DS_Store
+Thumbs.db
+
+
